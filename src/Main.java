@@ -15,7 +15,6 @@ public class Main {
         String convertir;
         Moneda moneda = null;
         Gson gson = new Gson();
-
         Scanner scanner = new Scanner(System.in);
 
         try {
@@ -41,6 +40,11 @@ public class Main {
         System.out.print("Ingrese la cantidad: ");
         cantidad = scanner.nextDouble();
         scanner.nextLine();
+
+        System.out.println("ARS - Peso argentino");
+        System.out.println("BOB - Boliviano boliviano");
+        System.out.println("BRL - Real brasileño");
+        System.out.println("USD - Dólar estadounidense");
         System.out.println("Ingresa a que moneda quieres hacer la conversion:");
         convertir = scanner.nextLine();
         if(moneda != null){
